@@ -13,93 +13,92 @@
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <style>
-    /* Light, non-intrusive defaults (keeps working with your existing CSS) */
+    /* light, non-intrusive helpers (works with your existing CSS) */
     .wrapper{max-width:1000px;margin:0 auto;padding:20px}
     .muted{color:#666}
+    img{border-radius:6px}
+    hr{border:none;border-top:1px solid #ddd;margin:1.2em 0}
+    section{margin-bottom:1.5em}
+    section h3{margin-bottom:.3em}
     .k-badges{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
     .badge{border:1px solid #ddd;border-radius:999px;padding:2px 10px;font-size:12px}
-    .news-date{white-space:nowrap;color:#444}
-    hr{border:none;border-top:1px solid #eee;margin:16px 0}
-    section h3{margin-bottom:6px}
-    ul.clean{padding-left:18px;margin-top:6px}
-    img{border-radius:6px}
+    .news-date{white-space:nowrap}
     table.pub-table td{vertical-align:top;padding:10px 12px}
   </style>
 </head>
-<body>
+<body data-gr-c-s-loaded="true">
   <div class="wrapper">
-    <!-- HEADER -->
-    <header>
-      <table>
-        <tbody>
-          <tr>
-            <td width="180" valign="top">
-              <img src="assets/img/khawarislam.jpeg" width="180" alt="Khawar Islam">
-            </td>
-            <td>
-              <h1 style="margin-bottom: 5px;">Khawar Islam</h1>
-              <b>Senior Scientist – Autonomy AI, <a href="https://neubility.co.kr/">Neubility</a>, Seoul, South Korea</b><br>
-              <span class="muted">Prev: Research Scientist – AI, <a href="http://www.coremaxtech.com/">CoreMax Technology</a>, Seoul, South Korea<br>Prev: Chief Technology Officer (CTO) – Gen AI, <a href="https://upendi.app/">Upendi.app</a>, Seoul, South Korea</span><br>
-              <br>
-              Email: khawarr[dot]islam[at]gmail[dot]com<br>
-              <a href="assets/cv.pdf">CV</a> |
-              <a href="https://scholar.google.com.pk/citations?user=SFClxNEAAAAJ&hl=en">Google Scholar</a> |
-              <a href="https://dblp.org/pid/261/2710.html">dblp</a> |
-              <a href="https://github.com/khawar-islam">Github</a> |
-              <a href="https://www.linkedin.com/in/khawar-islam/">LinkedIn</a>
 
-              <!-- Quick badges for highlights/newsworthy roles -->
-              <div class="k-badges">
-                <span class="badge">Top 5% (M.S.)</span>
-                <span class="badge">2× MVP Award</span>
-                <span class="badge">ICLR Reviewer</span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </header>
+    <!-- Header -->
+    <table>
+      <tbody>
+        <tr>
+          <td width="160">
+            <img src="assets/img/khawarislam.jpeg" width="200" alt="Khawar Islam">
+          </td>
+          <td>
+            <h1>Khawar Islam</h1>
+            <b>Senior Scientist – Autonomy AI, <a href="https://neubility.co.kr/">Neubility</a>, Seoul, South Korea</b><br>
+            <span class="muted">
+              Prev: Research Scientist – AI, <a href="http://www.coremaxtech.com/">CoreMax Technology</a>, Seoul, South Korea<br>
+              Prev: Chief Technology Officer (CTO) – Gen AI, <a href="https://upendi.app/">Upendi.app</a>, Seoul, South Korea
+            </span><br><br>
+            Email: khawarr[dot]islam[at]gmail[dot]com<br>
+            <a href="assets/cv.pdf">CV</a> |
+            <a href="https://scholar.google.com.pk/citations?user=SFClxNEAAAAJ&hl=en">Google Scholar</a> |
+            <a href="https://dblp.org/pid/261/2710.html">dblp</a> |
+            <a href="https://github.com/khawar-islam">Github</a> |
+            <a href="https://www.linkedin.com/in/khawar-islam/">LinkedIn</a>
+
+            <div class="k-badges">
+              <span class="badge">Top 5% (M.S.)</span>
+              <span class="badge">2× MVP Award</span>
+              <span class="badge">ICLR Reviewer</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
     <hr>
 
-    <!-- CONCISE SUMMARY + EDUCATION (replacing the old <p><h4> blocks) -->
+    <!-- Summary / Education / News -->
     <section>
       <h3>Summary</h3>
       <p>
-        Senior Scientist driving autonomy and perception at Neubility. I build robust learning systems across <b>data augmentation</b>,
-        <b>adversarial resilience</b>, <b>dataset curation</b>, <b>OCR</b>, and <b>diffusion-based generation</b> for character consistency and
-        image↔video translation. Recognized in the <b>top 5%</b> of my M.S. cohort and recipient of <b>two MVP awards</b>.
+        Senior Scientist driving autonomy and perception at <b>Neubility</b>. I build robust learning systems across
+        <b>data augmentation</b>, <b>adversarial resilience</b>, <b>dataset curation</b>, <b>OCR</b>, and
+        <b>diffusion-based generation</b> for character consistency and image↔video translation. Recognized in the
+        <b>top 5%</b> of my M.S. cohort and recipient of <b>two MVP awards</b>.
       </p>
     </section>
 
     <section>
       <h3>Education</h3>
       <p>
-        M.S. in Computer Science and Engineering, <b>Sejong University</b>, Seoul. Research in image understanding and reconstruction; proposed an
-        image compression approach presented at <b>CVPR Workshops</b>.
+        M.S. in Computer Science and Engineering, <b>Sejong University</b>, Seoul — research in image understanding and
+        reconstruction; proposed an image compression approach presented at <b>CVPR Workshops</b>.
       </p>
     </section>
 
-    <!-- NEWS -->
     <section>
       <h3>News</h3>
-      <ul class="clean">
-        <li><span class="news-date">Oct 2025</span> — Serving as an <b>ICLR Reviewer</b>.</li>
-        <!-- Examples for future updates:
-        <li><span class="news-date">Sep 2025</span> — Paper under review at <b>IEEE TIP</b> on reliable generative augmentation.</li>
-        <li><span class="news-date">Aug 2025</span> — Released <b>MoAE</b> (Mixture of Augmentation Experts) preprint and code.</li>
-        -->
+      <ul>
+        <li><span class="news-date"><b>Oct 2025</b></span> — Serving as an <b>ICLR Reviewer</b>.</li>
+        <!-- Add future items here -->
       </ul>
     </section>
 
-    <!-- PUBLICATIONS (kept from your original, with mild classing) -->
+    <hr>
+
+    <!-- Publications & other sections (kept from your original) -->
     <ul>
       <li><h2>International Conferences</h2></li>
       <table class="pub-table">
         <tbody>
           <tr>
             <td width="210">
-              <img src="assets/img/contextguided.png" width="210" alt="Context-guided Responsible DA">
+              <img src="assets/img/contextguided.png" width="210" alt="Context-guided Responsible Data Augmentation">
             </td>
             <td>
               <b>Context-guided Responsible Data Augmentation with Diffusion Models</b><br>
@@ -121,7 +120,7 @@
           </tr>
           <tr>
             <td width="210">
-              <img src="assets/img/fpvt.png" width="210" alt="FPVT">
+              <img src="assets/img/fpvt.png" width="210" alt="Face Pyramid Vision Transformer">
             </td>
             <td>
               <b>Face Pyramid Vision Transformer</b><br>
@@ -132,7 +131,7 @@
           </tr>
           <tr>
             <td width="210">
-              <img src="assets/img/architecture.png" width="210" alt="Image Compression RNN+GDN">
+              <img src="assets/img/architecture.png" width="210" alt="Image Compression with RNN and GDN">
             </td>
             <td>
               <b>Image Compression with Recurrent Neural Network and Generalized Divisive Normalization</b><br>
